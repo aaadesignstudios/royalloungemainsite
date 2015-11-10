@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>
+  {% if page.title %}
+    {{ page.title }}
+  {% else %}
+    Night Club
+  {% endif %}
+</title>
+ 
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+<script>
+function fluxxor() {
+	// Price By Day
+var today = new Date();
+var day = today.getDay();
+var price = 50.00;
+
+if(day == 0){
+	// Day is Sunday
+	price = 10.00+price;
+
+	}
+else if(day == 1){
+	// Day is Monday
+	}
+else if(day == 2){
+	// Day is Tuesday
+	}
+else if(day == 3){
+	// Day is Wednsday
+	}
+else if(day == 4){
+	// Day is Thursday
+	}
+else if(day == 5){
+	// Day is Friday
+	price = 10.00+price;
+
+	}
+else if(day == 6){
+	// Day is Saturday
+	price = 10.00+price;
+	}
+	
+    document.getElementById("fluxPrice").setAttribute("data-item-price", price); 
+}
+</script>
+<link type="text/css"
+  id="snipcart-theme"
+  href="https://cdn.snipcart.com/themes/base/snipcart.min.css" 
+  rel="stylesheet" />
+<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+</head>
+
+<body id="wrapper" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+<div id="loader">
+    <div class="loader">        
+    </div>
+</div>
+<!-- About And Information 
+
+Original Default Color: #ff2a70
+Replaced Color:  #c5b279
+
+Bright Gold:
+#fcd928
+(252,217,40)
+
+Original Overlay Color background-color: rgba(255,42,112, 0.7);
+Replaced Color: rgba(197,178,121, 0.7)
+
+
+-->
+
+<!-- start banner -->
+<div id="banner" class="module parallax parallax-header">
+    <div class="container">
+        <div class="row">
+            <div class="banner-inner">                
+                <div id="header-slider" class="owl-carousel">              
+                    <div class="item col-xs-12">
+                        <h1 class="title-lines editable"><span>October 10, 2015</span></h1>
+                        <h3 class="subtitle editable">Grand Opening</h3>
+                        <a class="btn scroll btn-concert-register" href="#reservation">Reserve a Table</a>
+                    </div>
+                     
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines editable"><span>October 10, 2015</span></h1>
+                        <h3 class="subtitle editable">Grand Opening</h3>
+                        <div id="defaultCountdown" class="col-sm-12"></div>
+                            <script type="text/javascript">
+                                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                            </script>
+                            <script type="text/javascript">
+                                var pageTracker = _gat._getTracker("UA-4715900-1");
+                                pageTracker._initData();
+                                pageTracker._trackPageview();
+                            </script>
+                        <a class="btn scroll" href="#reservation">Reserve a Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row banner-bottom hidden-xs">
+          
+        </div>
+    </div>
+</div>
+<!-- end banner -->
+
+<!-- start header -->
+<header id="header" data-spy="affix" data-offset-top="2">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-2 col-sm-3 col-xs-12 text-center logo">
+            	<a href="index.html"><img class="logo-img wow fadeIn" data-wow-duration="3s" src="images/logo.png" alt="Night Club logo" /></a>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 header-right affix-header-right">
+            	<nav class="navbar navbar-default col-xs-12 text-center">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="hvr-underline-from-center active"><a href="#banner" class="scroll"> HOME </a></li>
+                            <li class="hvr-underline-from-center"><a href="#gallery" class="scroll"> GALLERY </a></li>
+                            <li class="hvr-underline-from-center"><a href="#events" class="scroll"> EVENTS </a></li>
+                            <li class="hvr-underline-from-center"><a href="#reservation" class="scroll"> CONTACT </a></li>
+                        </ul>
+                   </div>
+                </nav>
+               </div>
+        </div>
+    </div>
+    <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-68536331-1', 'auto');
+ ga('send', 'pageview');
+
+</script>
+</header>
+<!-- end header -->
+
+    {{ content }}
+
+<!-- footer -->
+<div id="footer" class="module parallax parallax-footer">    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 text-center footer-info wow fadeInUp" data-wow-duration="1s">
+                <img src="images/footer-logo.png" alt="Logo" />
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-map-marker fa-3x"></i></p>
+                <p class="footer-text editable">2847 Buford Highway Atlanta, GA 30329</p>
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-envelope fa-3x"></i></p>
+                <p class="footer-text editable"><a href="mailto:info@royallounge.com">info@royallounge.com</a> <a href="mailto:jobs@royallounge.com">jobs@royallounge.com</a></p> 
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-phone fa-3x"></i></p>
+                <p class="footer-text editable">123-456-7890</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="social affix-social">
+                <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="https://twitter.com/royalloungeatl"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://instagram.com/royalloungeatl/"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- footer -->
+
+<div id="copy-right">
+    <div class="container">
+        <div class="row text-center">
+            <p>CopyRight &copy; 2015 Royal Lounge, Theme all rights reserved. </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+  src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript" 
+  id="snipcart" 
+  src="https://cdn.snipcart.com/scripts/snipcart.js"
+  data-api-key="Y2Q4YmE2NjktZTk4OS00OWYwLTlhZjQtMzhmM2IzYzBlZGM4"></script>
+      
+<script src="scripts/wow.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.smoothwheel.js"></script>
+<script type="text/javascript" src="scripts/respond.js"></script>
+<script type="text/javascript" src="scripts/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="scripts/jquery.bxslider.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="scripts/jquery.mixitup.js"></script>
+<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+<script type="text/javascript" src="scripts/jquery.plugin.js"></script>
+<script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="scripts/modernizr.custom.97074.js"></script>
+<script type="text/javascript" src="scripts/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
